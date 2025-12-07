@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ইসলাম মেডিকেল এন্ড ই-সেন্টার</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=SolaimanLipi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Hind Siliguri', 'SolaimanLipi', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px 80px;
+            position: relative;
+        }
+        .logo {
+            width: 140px;
+            height:140px;
+            border-radius:50%;
+            border:5px solid #4CAF50;
+            box-shadow: 0 0 20px rgba(76,175,80,0.6);
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        }
+        header p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #1a5d38;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        nav a:hover { color: #a8e6cf; transform: translateY(-3px); }
+
+        /* Sections */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: white;
+            margin: 30px 0;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: 0.4s;
+        }
+        section:hover { transform: translateY(-10px); }
+
+        h2 {
+            text-align: center;
+            color: #1a5d38;
+            font-size: 2.3rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: #4CAF50;
+            display: block;
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .service-card {
+            background: #f8fff9;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #e0f7e9;
+            transition: 0.4s;
+        }
+        .service-card:hover {
+            background: #4CAF50;
+            color: white;
+            transform: scale(1.05);
+            border-color: #4CAF50;
+        }
+        .service-card i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+        .service-card:hover i { color: white; }
+
+        /* Contact */
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            font-size: 1.2rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #e8f8f0;
+            padding: 15px 25px;
+            border-radius: 50px;
+        }
+        .contact-item i { color: #1a5d38; font-size: 1.5rem; }
+
+        /* Footer */
+        footer {
+            background: #1a5d38;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.3rem; }
+            nav a { display: block; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://via.placeholder.com/150/4CAF50/FFFFFF?text=ইসলাম+মেডিকেল" alt="লোগো" class="logo">
+        <h1>ইসলাম মেডিকেল এন্ড ই-সেন্টার</h1>
+        <p>ঔষধ ↔ ডিজিটাল সার্ভিস ↔ স্বাস্থ্য পরীক্ষা — সব এক ছাদের নিচে</p>
+        <p style="margin-top:15px; font-size:1.1rem;">মালিক: মো. রুহুল আমিন</p>
+    </header>
+
+    <nav>
+        <a href="#home">হোম</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#services">সার্ভিসসমূহ</a>
+        <a href="#contact">যোগাযোগ</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>আমাদের সম্পর্কে</h2>
+            <p style="font-size:1.2rem; text-align:center; max-width:900px; margin:0 auto;">
+                “ইসলাম মেডিকেল এন্ড ই-সেন্টার” আপনার এলাকার সবচেয়ে বিশ্বস্ত ও বহুমুখী সেবা কেন্দ্র। 
+                এখানে আপনি পাবেন অরিজিনাল ঔষধ, স্বাস্থ্য পরীক্ষা এবং সকল ধরনের ডিজিটাল সার্ভিস — সবকিছু সাশ্রয়ী মূল্যে ও দ্রুত সময়ে।
+            </p>
+        </section>
+
+        <section id="services">
+            <h2>আমাদের সার্ভিসসমূহ</h2>
+            <div class="services-grid">
+                <div class="service-card"><i class="fas fa-pills"></i><h3>ঔষধ বিক্রয়</h3><p>সকল প্রকার অরিজিনাল ঔষধ</p></div>
+                <div class="service-card"><i class="fas fa-laptop"></i><h3>কম্পিউটার কম্পোজ</h3><p>টাইপিং, প্রিন্ট, স্ক্যান</p></div>
+                <div class="service-card"><i class="fas fa-briefcase"></i><h3>অনলাইন চাকরির আবেদন</h3><p>ফর্ম ফিলাপ ও সাবমিট</p></div>
+                <div class="service-card"><i class="fas fa-file-alt"></i><h3>দলিল মিউটেশন ও পর্চা</h3><p>জমির কাগজপত্র</p></div>
+                <div class="service-card"><i class="fas fa-camera"></i><h3>পাসপোর্ট ছবি</h3><p>তাৎক্ষণিক ছবি তোলা</p></div>
+                <div class="service-card"><i class="fas fa-copy"></i><h3>ফটোকপি ও প্রিন্ট</h3><p>রঙিন-কালো সব ধরনের</p></div>
+                <div class="service-card"><i class="fas fa-syringe"></i><h3>ডায়াবেটিস টেস্ট</h3><p>ব্লাড সুগার মাপা</p></div>
+                <div class="service-card"><i class="fas fa-heartbeat"></i><h3>ব্লাড প্রেসার</h3><p>রক্তচাপ পরিমাপ</p></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>যোগাযোগ করুন</h2>
+            <div class="contact-info">
+                <div class="contact-item"><i class="fas fa-map-marker-alt"></i> [আপনার পূর্ণ ঠিকানা এখানে লিখুন]</div>
+                <div class="contact-item"><i class="fas fa-phone"></i> [আপনার মোবাইল নম্বর]</div>
+                <div class="contact-item"><i class="fab fa-whatsapp"></i> WhatsApp: [নম্বর]</div>
+                <div class="contact-item"><i class="fas fa-clock"></i> সকাল ৮টা – রাত ১০টা (শুক্রবার বন্ধ)</div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; ২০২৫ ইসলাম মেডিকেল এন্ড ই-সেন্টার | সকল অধিকার সংরক্ষিত | Developed with ❤️ by Grok</p>
+    </footer>
+
+</body>
+</html>
